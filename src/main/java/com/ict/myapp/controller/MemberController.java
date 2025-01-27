@@ -55,7 +55,7 @@ public class MemberController {
 	
 	//로그인(DB조회)
 	@PostMapping("/member/loginOk")
-	public ____ loginOk(String userid, String userpwd, HttpSession session) {  //()안의 변수를 request해준다.
+	public ModelAndView loginOk(String userid, String userpwd, HttpSession session) {  //()안의 변수를 request해준다.
 		
 		MemberVO vo = service.loginOk(userid, userpwd);
 		
@@ -75,9 +75,9 @@ public class MemberController {
 			
 		} else { //일치하는 정보가 없으면 vo에 null이 담겨 객체가 안 만들어진다.
 			//로그인 실패 : 로그인폼으로 이동
-			
+			mav.setViewName("redirect:login");
 		}
-		
+		return mav;
 	}
 }
 

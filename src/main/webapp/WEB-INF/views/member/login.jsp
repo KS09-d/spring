@@ -45,7 +45,7 @@
     <script>
     	function formCheck(){  //유효성 검사
     		//아이디 정보의 유무 체크
-    		if(document.getElementByID("userid").value==""){
+    		if(document.getElementById("userid").value==""){
     			alert("아이디를 입력 후 로그인하세요.");
     			return false;
     		}
@@ -68,7 +68,7 @@
         </form>
 
         <div class="left">
-            <input type="button" value="회원가입" onclick="Location.href='<%= request.getContextPath()%>/member/form'"/>  <!-- button이기 때문에 이벤트로 연결 -->
+            <input type="button" value="회원가입" onclick="location.href='<%= request.getContextPath()%>/member/form'"/>  <!-- button이기 때문에 이벤트로 연결 -->
         </div>
 
         <div class="right">
