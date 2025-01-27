@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- https://mybatis.org/mybatis-3/ko/getting-started.html 참조 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.ict.myapp.dao.MemberDAO">
+  
+    <!-- dao의 method를 찾아가기위해서 id가 dao객체의 method명과 같다. -->
+    <!-- vo일 때는 #{변수}로 값을 가져온다. -->
+  	<insert id="memberInsert"> 
+  		insert into member(userid, userpwd, username, tel, email, 
+  						   zipcode, addr, addrDetail, hobby)
+  		values(#{userid}, #{userpwd}, #{username}, #{tel}, #{email},
+  			   #{zipcode}, #{addr}, #{addrDetail}, #{hobby}) 
+  	</insert>
+  	
+  	<!-- parameter의 값을 가져올 때는 #{param n번째}로 값을 가져온다. -->
+  	<select id="loginOk" resultType="com.ict.myapp.vo.MemberVO">
+  		select userid, username from member where userid=#{param1} and userpwd=#{param2} 
+  	</select>
+  </mapper>
+  
+  
+
+

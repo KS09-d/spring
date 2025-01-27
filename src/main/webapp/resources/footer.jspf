@@ -1,0 +1,16 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+	<footer>
+		copyright@ict
+	</footer>
+
+</body>
+</html>
+
+<!-- footer의 style이 적용되지않아서 dev Tool을 확인해보니 새로고침이 안되어있음.
+	 홈페이지에서 dev Tool열고 새로고침 아이콘을 우클릭하면 강력새로고침이 나옴. 눌러서 적용. -->
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 환경설정할 xml파일 (https://mybatis.org/mybatis-3/ko/getting-started.html 참고) -->
+
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+ <!-- di(defendency insection : 다른 객체를 가져온다. -->
+<configuration>
+
+
+	
+</configuration>
+
+
